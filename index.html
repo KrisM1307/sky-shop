@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин авиа-товаров «Skyline»</title>
+    <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC:wght@300;400;700&family=Playwrite+US+Trad:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <header id="top">
+        <nav>
+            <a href="#" class="logo">SkyLine</a>
+            <a href="#shop-items" class="menu_item">Каталог</a>
+            <a href="#schedule" class="menu_item">График работы</a>
+            <div class="site-search">
+                <input type="search" id="search-input">
+                <button type="button" id="search-btn" class="fa fa-search"></i>
+              </div>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="filters">
+          <div class="filters-sort">
+            <label for="sort">Сортировка:</label>
+            <select name="sort" id="sort">
+              <option selected value="alphabet">По алфавиту</option>
+              <option value="expensive">Сначала дорогие</option>
+              <option value="cheap">Сначала дешевые</option>
+            </select>
+          </div>
+        </div>
+        <section id="shop-items">
+        </section>
+        <p id="nothing-found">Ничего не найдено</p>
+      </main>
+      <footer id="schedule">
+        <a href="#" class="logo">SkyLine</a>
+        <a class="schedule">Мы открыты ежедневно c 10:00 до 22:00</a>
+      </footer>
+      <a href="#top" class="up"></a>
+      <template id="item-template">
+        <div class="shop-item">
+          <img src="">
+          <div class="content">
+            <h1></h1>
+            <p></p>
+          </div>
+          <div class="footer">
+            <span class="price"></span>
+          </div>
+        </div>
+        </div>
+      </template>
+      <script src="script.js"></script>
+</body>
+
+</html>
