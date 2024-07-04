@@ -106,11 +106,11 @@ function renderItems(arr) {
 };
 
 function sortByAlphabet(a, b) {
-    if (a.title > b.title && a.description > b.description) {
+    if (a.title > b.title) {
         return 1;
     }
 
-    if (a.title < b.title && a.description < b.description) {
+    if (a.title < b.title) {
         return -1;
     }
 
